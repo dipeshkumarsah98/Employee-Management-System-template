@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .btn-toggle-nav {
+            font-size: 18px;
+        }
+
+        .btn-toggle-nav a {
+            display: inline-flex;
+            padding: .1875rem .5rem;
+            margin-top: .125rem;
+            margin-left: 1.25rem;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .btn-toggle-nav a:hover,
+        .btn-toggle-nav a:focus {
+            background-color: #d2f4ea;
+            color: black;
+        }
+
+
+        .btn-toggle[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- side bar -->
+    <div class="d-flex flex-row bg-light">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100dvh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">Empoyee Management system</span>
+            </a>
+            <hr>
+            <ul class="list-unstyled">
+                <li class="mb-1">
+                    <button class="btn btn-toggle gap-3 align-items-center rounded collapsed text-white"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i>
+                        Tables
+                    </button>
+                    <div class="collapse " id="home-collapse" style="">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="index.html" class="link-light rounded">Employee</a></li>
+                            <li><a href="designation.html" class="link-light rounded">Designation</a></li>
+                            <li><a href="department.html" class="link-light rounded">Department</a></li>
+                            <li><a href="salary.html" class="link-light rounded">Salary</a></li>
+                            <li><a href="vacancy.html" class="link-light rounded">Vacancy</a></li>
+                            <li><a href="leave.html" class="link-light rounded">Leave</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container my-3 p-2">
+            <h2 class="display-6 fw-normal mb-3">Manage Department</h2>
+            <div class="bg-white p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="display-6">Department List</h3>
+                    <a href="#" class="btn btn-primary btn-lg">Add Department</a>
+                </div>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">DepartmentId</th>
+                            <th scope="col">Department Name</th>
+                            <th scope="col">Department Locaiton</th>
+                            <th scope="col">Department Block</th>
+                            <th scope="col">Department HOD</th>
+                            <th scope="col">Department Number</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>HR Department</td>
+                            <td>Kathmandu</td>
+                            <td>A</td>
+                            <td>Keshav Yadav</td>
+                            <td>1</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary">Details</a>
+                                <a href="#" class="btn btn-secondary">Update</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>IT Department</td>
+                            <td>Kathmandu</td>
+                            <td>B</td>
+                            <td>Dipesh Kumar Sah</td>
+                            <td>2</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary">Details</a>
+                                <a href="#" class="btn btn-secondary">Update</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
