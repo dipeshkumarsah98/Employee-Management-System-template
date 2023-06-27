@@ -33,12 +33,17 @@
         .btn-toggle[aria-expanded="true"]::before {
             transform: rotate(90deg);
         }
+
+        input {
+            background-color: #1a1a1a !important;
+            color: whitesmoke !important;
+        }
     </style>
 </head>
 
 <body>
     <!-- side bar -->
-    <div class="d-flex flex-row bg-light">
+    <div class="d-flex flex-row bg-dark">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100dvh;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
@@ -69,7 +74,7 @@
         </div>
 
         <div class="container my-3 p-2">
-            <div class="bg-white p-4">
+            <div class="bg-dark text-white border border-1 border-white p-4">
                 <div class="d-flex justify-content-between align-items-center">
                     <h3 class="display-6">Update Employee</h3>
                 </div>
@@ -107,8 +112,8 @@
                         <input type="text" class="form-control" id="remark" value="Joined as a Intern">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary ">Update</button>
-                        <button class="btn btn-danger">Cancel</button>
+                        <button type="submit" class="btn btn-outline-primary ">Update</button>
+                        <button class="btn btn-outline-danger">Cancel</button>
                     </div>
                 </form>
             </div>

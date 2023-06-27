@@ -38,7 +38,7 @@
 
 <body>
     <!-- side bar -->
-    <div class="d-flex flex-row bg-light">
+    <div class="d-flex flex-row bg-dark">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100dvh;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
@@ -52,7 +52,7 @@
                     <button class="btn btn-toggle gap-3 align-items-center rounded collapsed text-white"
                         data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
                         <i class="bi bi-chevron-down"></i>
-                        Tables
+                        Actions
                     </button>
                     <div class="collapse " id="home-collapse" style="">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -70,13 +70,13 @@
 
         <div class="container my-3 p-2">
             <h2 class="display-6 fw-normal mb-3">Manage Employee</h2>
-            <div class="bg-white p-4">
+            <div class="bg-dark border border-1 border-white text-white rounded-1 p-4">
                 <div class="d-flex justify-content-between align-items-center">
                     <h3 class="display-6">Employee List</h3>
-                    <a href="addNewEmpoyee.html" class="btn btn-primary btn-lg">Add New Employee</a>
+                    <a href="addNewEmpoyee.html" class="btn btn-outline-light btn-lg">Add New Employee</a>
                 </div>
                 <hr>
-                <table class="table">
+                <table class="table text-white">
                     <thead>
                         <tr>
                             <th scope="col">Id</th>
@@ -93,17 +93,17 @@
                     <tbody>
                         <tr>
                             <th>1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>mark@gmail.com</td>
+                            <td>Dipesh</td>
+                            <td>Kumar</td>
+                            <td>dipeshsah98@gmail.com</td>
                             <td>Kathmandu</td>
-                            <td>9808982515</td>
+                            <td>9812345678</td>
                             <td>2022/07/07</td>
-                            <td>Hello</td>
+                            <td>Developer</td>
                             <td>
-                                <a href="employeeDetails.html" class="btn btn-secondary">Details</a>
-                                <a href="updateEmpoyee.html" class="btn btn-secondary">Update</a>
-                                <a href="#" class="btn btn-danger">Delete</a>
+                                <a href="employeeDetails.html" class="btn btn-outline-info">Details</a>
+                                <a href="updateEmpoyee.html" class="btn btn-outline-primary">Update</a>
+                                <a href="#" class="btn btn-outline-danger">Delete</a>
                             </td>
                         </tr>
                     </tbody>

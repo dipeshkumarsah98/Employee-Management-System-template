@@ -33,12 +33,18 @@
         .btn-toggle[aria-expanded="true"]::before {
             transform: rotate(90deg);
         }
+
+        ul li {
+            background: #212529 !important;
+            color: white !important;
+            border-color: rgba(250, 235, 235, 0.068) !important;
+        }
     </style>
 </head>
 
 <body>
     <!-- side bar -->
-    <div class="d-flex flex-row bg-light">
+    <div class="d-flex flex-row bg-dark">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100dvh;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
@@ -56,12 +62,12 @@
                     </button>
                     <div class="collapse " id="home-collapse" style="">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="index.html" class="link-light rounded">Employee</a></li>
-                            <li><a href="designation.html" class="link-light rounded">Designation</a></li>
-                            <li><a href="department.html" class="link-light rounded">Department</a></li>
-                            <li><a href="salary.html" class="link-light rounded">Salary</a></li>
-                            <li><a href="vacancy.html" class="link-light rounded">Vacancy</a></li>
-                            <li><a href="leave.html" class="link-light rounded">Leave</a></li>
+                            <li><a href="index.html" class="link-dark rounded">Employee</a></li>
+                            <li><a href="designation.html" class="link-dark rounded">Designation</a></li>
+                            <li><a href="department.html" class="link-dark rounded">Department</a></li>
+                            <li><a href="salary.html" class="link-dark rounded">Salary</a></li>
+                            <li><a href="vacancy.html" class="link-dark rounded">Vacancy</a></li>
+                            <li><a href="leave.html" class="link-dark rounded">Leave</a></li>
                         </ul>
                     </div>
                 </li>
@@ -69,25 +75,25 @@
         </div>
 
         <div class="container my-3 p-2">
-            <div class="bg-white p-4">
+            <div class="bg-dark text-white border border-1 border-white p-4">
                 <div class="d-flex justify-content-between">
                     <h3 class="display-6 ">View Employee</h3>
                 </div>
                 <hr>
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-light">Id: &ThickSpace; 1</li>
-                    <li class="list-group-item list-group-item-light">First Name: &ThickSpace; John</li>
-                    <li class="list-group-item list-group-item-light">Last Name: &ThickSpace; Wick</li>
-                    <li class="list-group-item list-group-item-light">Address: &ThickSpace; Kathmandu</li>
-                    <li class="list-group-item list-group-item-light">Email: &ThickSpace; john@gmail.com</li>
-                    <li class="list-group-item list-group-item-light">Contact: &ThickSpace; 980898267</li>
-                    <li class="list-group-item list-group-item-light">Join Date: &ThickSpace; 01/01/2022</li>
-                    <li class="list-group-item list-group-item-light">Remar: &ThickSpace; Join as a intern</li>
+                    <li class="list-group-item list-group-item-dark">Id: &ThickSpace; 1</li>
+                    <li class="list-group-item list-group-item-dark">First Name: &ThickSpace; John</li>
+                    <li class="list-group-item list-group-item-dark">Last Name: &ThickSpace; Wick</li>
+                    <li class="list-group-item list-group-item-dark">Address: &ThickSpace; Kathmandu</li>
+                    <li class="list-group-item list-group-item-dark">Email: &ThickSpace; john@gmail.com</li>
+                    <li class="list-group-item list-group-item-dark">Contact: &ThickSpace; 980898267</li>
+                    <li class="list-group-item list-group-item-dark">Join Date: &ThickSpace; 01/01/2022</li>
+                    <li class="list-group-item list-group-item-dark">Remar: &ThickSpace; Join as a intern</li>
                 </ul>
                 <div class="mt-2">
-                    <a href="index.html" class="btn btn-primary">Back</a>
-                    <a href="updateEmpoyee.html" class="btn btn-secondary">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
+                    <a href="index.html" class="btn btn-outline-primary">Back</a>
+                    <a href="updateEmpoyee.html" class="btn btn-outline-secondary">Edit</a>
+                    <a href="#" class="btn btn-outline-danger">Delete</a>
                 </div>
             </div>
 
